@@ -15,7 +15,7 @@
 int main()
 {
 
-  printf("Bien venido al Programa\n\n");//Simple intro
+  printf("Bienvenido al Programa\n\n");//Simple intro
 
 	int i, j; //indices
 	int m[5][5]; //matriz de 5x5
