@@ -1,5 +1,7 @@
 /*
 	Rodolfo Castillo 2015.
+	Práctica 1 del Laboratorio de Programacion Avanzada y metodos numericos.
+	Ejercicio propuesto 4
 	Hacer el algoritmo y programa que lea una matriz de 3 x 5. 
 	Sumar las columnas e imprimir la columna que tuvo la máxima 
 	suma, así como ese resultado.
@@ -68,7 +70,7 @@ int main(int argc, char const *argv[])
 	printf("\nDe esta matriz la columna (de la columna 0 - 4) %d es la que tiene una suma total mayor\nSu total es %d y los valores individuales son:\n\n", col, sum[col]);
 	for (int i = 0; i < 3; ++i)
 	{
-		printf("\t%d\n", matriz[i][col]);		
+		printf("\t%d\n", matriz[i][col]);	//imprecion ciclica de solo una columna de la matriz	
 	}
 
 	printf("\n\n\n");
