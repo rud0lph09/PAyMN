@@ -48,22 +48,24 @@ int main(int argc, char const *argv[])
 
 			
 
-			char *name = malloc (25);
+			
 
 			printf("Porfavor ingrese su nombre y apellidos, todo entre comillas: ");
-			fgets(name, 25, stdin); 
+			scanf("%25s", alu.p1.nombre);
+			fflush(stdin); 
 			printf("\n\nPorfavor ingrese su edad: ");
 			scanf("%d", &alu.p1.edad);
 			printf("\n\nPor favor escriba C, si es casado o S, si es soltero: ");
+			fflush(stdin);
 			scanf("%c", &alu.p1.estado);
-			for (int i = 0; i < 25; ++i)
-			{
-				alu.p1.nombre[i] = name[i];
-			}
+			//for (int i = 0; i < 25; ++i)
+			//{
+			//	alu.p1.nombre[i] = name[i];
+			//}
 			printf("\n\nIngrese su número de cuenta: ");
 			scanf("%d", &alu.cuenta);
 			printf("\n\nIngrese el nombre de su carrera, todo entre comillas: ");
-			scanf("%s", alu.carrera);
+			scanf("%25[ˆ\n]s", alu.carrera);
 			printf("\n\n");
 
 			
